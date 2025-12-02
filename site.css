@@ -1,0 +1,231 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #f0e6d6;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Навигация */
+.navbar {
+    background: rgba(219, 112, 147, 0.9); /* Розовый Мицури */
+    padding: 1rem 2rem;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 20px rgba(219, 112, 147, 0.4);
+    margin-bottom: 30px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav-list a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Заголовки */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(75, 0, 30, 0.3);
+    border-radius: 15px;
+    border-left: 5px solid #ff6b9d;
+}
+
+h1 {
+    color: #ff9ec0; /* Нежно-розовый */
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    color: #ff6b9d;
+    border-bottom: 2px solid #ff6b9d;
+    padding-bottom: 10px;
+    margin: 30px 0 20px 0;
+}
+
+h3 {
+    color: #ff9ec0;
+    margin: 25px 0 15px 0;
+}
+
+/* Карточки и секции */
+.section {
+    background: rgba(40, 40, 70, 0.7);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #444;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.rank-system {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.rank-card {
+    background: rgba(90, 30, 60, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #db7093;
+}
+
+.rank-card h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-badge {
+    background: #4a0a2a;
+    color: #ff9ec0;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Списки заданий */
+.task-list {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.task-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    position: relative;
+    padding-left: 30px;
+}
+
+.task-list li:before {
+    content: "❤";
+    position: absolute;
+    left: 0;
+    color: #ff6b9d;
+}
+
+.rp-badge {
+    background: #2d5a27;
+    color: #a3ff9e;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+/* Таблицы */
+.quota-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(50, 50, 80, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.quota-table th, .quota-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.quota-table th {
+    background: rgba(219, 112, 147, 0.7);
+    color: white;
+}
+
+.quota-table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Инструкции ПМП */
+.pmp-steps {
+    background: rgba(30, 60, 50, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border-left: 4px solid #4CAF50;
+}
+
+.pmp-steps ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.pmp-steps li {
+    margin-bottom: 8px;
+}
+
+.warning {
+    background: rgba(150, 50, 50, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border-left: 4px solid #ff4444;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #aaa;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .rank-system {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+}
