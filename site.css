@@ -1,4 +1,3 @@
-/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +18,8 @@ body {
     padding: 20px;
 }
 
-/* Навигация */
 .navbar {
-    background: rgba(219, 112, 147, 0.9); /* Розовый Мицури */
+    background: rgba(219, 112, 147, 0.9);
     padding: 1rem 2rem;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 4px 20px rgba(219, 112, 147, 0.4);
@@ -52,7 +50,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* Заголовки */
 header {
     text-align: center;
     margin-bottom: 40px;
@@ -63,7 +60,7 @@ header {
 }
 
 h1 {
-    color: #ff9ec0; /* Нежно-розовый */
+    color: #ff9ec0;
     font-size: 2.8rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -81,7 +78,6 @@ h3 {
     margin: 25px 0 15px 0;
 }
 
-/* Карточки и секции */
 .section {
     background: rgba(40, 40, 70, 0.7);
     padding: 25px;
@@ -119,7 +115,6 @@ h3 {
     font-size: 0.9rem;
 }
 
-/* Списки заданий */
 .task-list {
     list-style: none;
     margin-left: 10px;
@@ -148,7 +143,6 @@ h3 {
     margin-left: 10px;
 }
 
-/* Таблицы */
 .quota-table {
     width: 100%;
     border-collapse: collapse;
@@ -173,7 +167,6 @@ h3 {
     background: rgba(255, 255, 255, 0.05);
 }
 
-/* Инструкции ПМП */
 .pmp-steps {
     background: rgba(30, 60, 50, 0.3);
     padding: 20px;
@@ -199,7 +192,6 @@ h3 {
     border-left: 4px solid #ff4444;
 }
 
-/* Футер */
 footer {
     text-align: center;
     margin-top: 50px;
@@ -209,7 +201,6 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
     .nav-list {
         flex-direction: column;
@@ -229,3 +220,4 @@ footer {
         padding: 10px;
     }
 }
+
